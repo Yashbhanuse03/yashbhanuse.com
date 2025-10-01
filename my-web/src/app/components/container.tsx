@@ -4,7 +4,7 @@ const container = ({children, className} : {
     children : React.ReactNode,
 }) => {
   return (
-    <div className= "max-w-4xl mx-auto bg-dark-white border" >{children}</div>
+    <div className= "max-w-4xl mx-auto bg-dark-black bg-white" >{children}</div>
   )
 }
 
