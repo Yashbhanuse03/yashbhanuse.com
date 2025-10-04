@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Container from '../container';
 
-
-
-export default function navbar() {
+export default function Navbar() {
   return (
-    <nav className="fixed bg-white rounded-full shadow-md px-3 py-3 flex items-center justify-between w-full max-w-3xl mx-auto mt-1">
+    
+    <nav className="  fixed bg-white rounded-full shadow-md px-18 py-4 backdrop-blur-sm   ">
       <div className="font-bold text-base text-gray-800">Portfolio</div>
     </nav>
+    
   );
 }

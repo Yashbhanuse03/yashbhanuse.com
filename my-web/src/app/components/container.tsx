@@ -1,11 +1,9 @@
-// import { cn } from "@/app/lib/utiles";
-const container = ({children, className} : {
-    className? : string ,
-    children : React.ReactNode,
-}) => {
-  return (
-    <div className= {"max-w-4xl mx-auto dark:bg-dark-black bg-white  border-2 border-gray-200 rounded-lg min-h-screen p-4" } >{children}</div>
-  )
-}
+import React from "react";
 
-export default container
+const container = ({children, className}: {children: React.ReactNode, className?: string}) => {
+  return (
+    <div className={`max-w-4xl p-4 py-13 mx-auto shadow-md  rounded-lg ${className}`}>{children}</div>
+  );
+};
+
+export default container;

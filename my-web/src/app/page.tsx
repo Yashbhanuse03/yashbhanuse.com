@@ -1,18 +1,32 @@
-import Image from "next/image";
-import navbar from "./components/ui/navbar";
+import { Header } from "./components/header"
+import { HeroSection } from "./components/hero-section"
+import { AboutSection } from "./components/about-section"
+import { ExperienceSection } from "./components/experience-section"
+import { ProjectsSection } from "./components/projects-section"
+import { SkillsSection } from "./components/skills-section"
+import { ContactSection } from "./components/contact-section"
+import { Footer } from "./components/footer"
 import Container from "./components/container";
 import Navbar from "./components/ui/navbar";
 
-
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-     <Container className="">
-     <Navbar  />
-      <h1> Hi I am Yash</h1>
-      <p> I am a software developer who loves to build websites and apps efficiently stylishly and responsive</p>
-    
-     </Container>
+    <div className="min-h-screen bg-background">
+      <Header />
+     
+      <Container>
+        {/* <Navbar /> */}
+        <main>
+        <HeroSection />
+        <AboutSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+      </Container>
+     
     </div>
   );
 }

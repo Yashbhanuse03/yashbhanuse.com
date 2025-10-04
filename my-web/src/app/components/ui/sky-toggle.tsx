@@ -1,4 +1,15 @@
 'use client'
+import React, { useId, useState, useEffect } from 'react'
+import styled from 'styled-components'
+
+interface SkyToggleProps {
+  checked?: boolean
+  defaultChecked?: boolean
+  onChange?: (checked: boolean) => void
+  id?: string
+  className?: string
+}
+
 const Switch: React.FC<SkyToggleProps> = ({ checked, defaultChecked, onChange, id, className }) => {
 const generated = useId()
 const inputId = id ?? `sky-toggle-${generated}`
